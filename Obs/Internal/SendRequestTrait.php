@@ -221,8 +221,6 @@ trait SendRequestTrait
 				$host = $this->isCname ? $host : $bucketName . '.' . $host;
 			}
 		}
-
-        $headers['Host'] = $host;
 		
 		if($objectKey){
 			$objectKey = $v4 -> urlencodeWithSafe($objectKey);
